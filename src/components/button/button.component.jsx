@@ -7,7 +7,7 @@ iverted: 'inverted'
 
 const Button = ({ label, buttonType, ...otherProps }) => {
   return (
-    <button className={`button-container ${BUTTON_TYPES_CLASSES}`} {...otherProps}>
+    <button className={`button-container ${BUTTON_TYPES_CLASSES[buttonType]}`} {...otherProps}>
       {label}
     </button>
   );
